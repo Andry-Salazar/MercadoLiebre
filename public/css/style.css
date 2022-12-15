@@ -1,0 +1,155 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #666;
+  font-size: 12px;
+}
+.titulares {
+  font-size: 24px;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.off {
+  font-size: 16px;
+  color: rgb(101, 179, 23);
+}
+
+#contenedor {
+  background-color: #666;
+}
+
+#header {
+  padding-left: 2em;
+  background-color: #eac926;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  background-color: #eac926;
+}
+
+#main {
+  background-color: #ebebeb;
+  text-align: center;
+  padding: 30px 30px;
+}
+
+.icono-search {
+  margin-left: 2px;
+  background-color: #ebebeb;
+  border-radius: 10%;
+  border: solid 0.5px black;
+  display: inline;
+  justify-content: center;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.input-nav {
+  width: 30%;
+  height: 25px;
+}
+
+.search {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fas-handDolar {
+  padding-right: 10px;
+}
+
+.texto-nav {
+  font-size: 18px;
+  display: flex;
+  margin-left: 15%;
+}
+
+.img-header {
+  padding-top: 20px;
+  width: 300px;
+}
+
+.navMenu {
+  list-style: none;
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+.loginNav {
+  list-style: none;
+  font-size: 16px;
+}
+
+.burger-menu {
+  background-color: #1259c3;
+  color: #ebebeb;
+  width: 2em;
+  height: 2em;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.banner {
+  width: 1424px;
+  margin-bottom: -10px;
+}
+
+.img {
+  width: 220px;
+}
+
+.icono-truck {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.fas-truck {
+  color: rgb(101, 179, 23);
+  border-radius: 50%;
+  border: solid 1px rgb(101, 179, 23);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.footer {
+  padding: 40px 20px;
+
+  background-color: #ebebeb;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 16px;
+}
+
+.fas-footer {
+  color: #1259c3;
+  font-size: 16px;
+}
+
+.copyrigth {
+  padding-top: 30px;
+}
+
+.menu-footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
