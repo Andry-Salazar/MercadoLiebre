@@ -1,10 +1,136 @@
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #666;
-  font-size: 12px;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  position: relative;
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  font-size: small;
+  background-color: #ebebeb;
+}
+
+.main{
+  margin-bottom: 50px;
+  
+}
+
+:root {
+  --yellow: #eac926;
+  --dark-blue: #03264c;
+  --light-blue: #1259c3;
+  --gray: #666;
+  --light-gray: #ebebeb;
+  --green: #39b54a;
+}
+
+.container {
+  max-width:max-content;
+}
+
+
+
+@media (min-width: 425px) {
+  .barra {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+@media (min-width: 425px) {
+  .header-tablet-desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 425px) {
+  .logo-mercadoLiebre {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  nav {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 424px) {
+  nav {
+    display: none;
+  }
+}
+
+nav {
+  visibility: hidden;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 425px) {
+  nav {
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 425px) {
+  .search {
+    align-self: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 425px) {
+  .texto-compraCuota {
+    align-self: center;
+  }
+}
+
+@media (min-width: 425px) {
+  .navMenu {
+    display: flex;
+    list-style-type: none;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 425px) {
+  .loginNav {
+    display: flex;
+    list-style-type: none;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 425px) {
+  .section-right-header li a {
+    margin-right: 10px;
+  }
+}
+
 .titulares {
-  font-size: 24px;
+    font-size: 24px;
+    margin: 25px;
+    color: var(--gray);
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
 .price {
@@ -16,37 +142,110 @@ body {
   color: rgb(101, 179, 23);
 }
 
-#contenedor {
-  background-color: #666;
+header {
+  background-color: var(--yellow);
 }
 
-#header {
-  padding-left: 2em;
-  background-color: #eac926;
+@media (min-width: 769px){
+.caja-main {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
 }
 
-#nav {
+@media (min-width: 425px){
+.caja-main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+}
+
+.caja-main {
+    display: flex;
+}
+.caja-main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.producto:hover {
+  box-shadow: 0px 0px 10px rgb(100 100 100);
+}
+
+.producto:hover .nombre-producto{
+  visibility: visible;
+}
+
+.nombre-producto {
+  visibility: hidden;
+}
+
+.producto {
+  background-color: white;
+  position: relative;
+}
+
+article {
+  margin-top: 10px;
   display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
-  background-color: #eac926;
+  flex-direction: column;
 }
 
-#main {
-  background-color: #ebebeb;
-  text-align: center;
-  padding: 30px 30px;
+
+
+.icono-truck {
+  border-top: 1px solid #ebebeb;
+  margin: 15px 15px;
 }
 
-.icono-search {
-  margin-left: 2px;
-  background-color: #ebebeb;
-  border-radius: 10%;
-  border: solid 0.5px black;
-  display: inline;
-  justify-content: center;
-  font-size: 16px;
+.img {
+  width: 250px;
+  margin: 10px 10px;
+}
+
+.busqueda {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+  border-radius: 5px;
+  width: max-content;
+  margin-bottom: 15px;
+}
+
+form input {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: white;
   padding: 5px;
+  margin: 10px;
+  outline: none;
+}
+
+.boton-lupa {
+  border: none;
+  background-color: transparent;
+}
+
+#lupa {
+  background-color: #fff;
+  border-radius: 5%;
+  padding: 3px;
+  font-size: 1em;
+}
+
+.barra {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 20px;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .input-nav {
@@ -54,85 +253,94 @@ body {
   height: 25px;
 }
 
-.search {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .fas-handDolar {
   padding-right: 10px;
 }
 
-.texto-nav {
-  font-size: 18px;
-  display: flex;
-  margin-left: 15%;
+.compra-cuota {
+  text-align: center;
+  margin-left: 10px;
+  font-size: small;
 }
 
-.img-header {
-  padding-top: 20px;
-  width: 300px;
-}
 
-.navMenu {
-  list-style: none;
-  font-size: 16px;
-  padding-top: 20px;
-}
 
+.navMenu,
 .loginNav {
   list-style: none;
   font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navMenu > li, .loginNav > li {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+
+@media (min-width: 425px){
+.burger-menu {
+    display: none;
+}
 }
 
 .burger-menu {
-  background-color: #1259c3;
-  color: #ebebeb;
-  width: 2em;
-  height: 2em;
-  border-radius: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+.buscador-burger{
+background-color: var(--light-blue);
+color: white;
+font-size: 15px;
+padding: 10px;
+border-radius: 10%;
+text-align: center;
 }
 
 .banner {
-  width: 1424px;
-  margin-bottom: -10px;
+  width: 100%;
 }
 
-.img {
-  width: 220px;
-}
-
-.icono-truck {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-}
-
-.fas-truck {
-  color: rgb(101, 179, 23);
+#camion {
+  background-color: #fff;
+  color: #39b54a;
   border-radius: 50%;
-  border: solid 1px rgb(101, 179, 23);
+  border: solid 1px #39b54a;
   width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 25px;
+  display: block;
   padding: 5px;
+  position: absolute;
   font-size: 16px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  right: 40px;
+  top:-14px;
+}
+
+.descripcion-producto {
+  padding-top: 30px;
 }
 
 .footer {
   padding: 40px 20px;
-
-  background-color: #ebebeb;
+  background-color:#fff;
   text-align: center;
+}
+
+.ul-footer {
+  display: flex;
+}
+
+.ul-footer > li {
+  list-style-type: none;
+  margin-right: 10px;
 }
 
 .footer-title {
